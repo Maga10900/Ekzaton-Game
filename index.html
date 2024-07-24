@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekzaton MinTap</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="game-title">Ekzaton MinTap</h1>
+        <p id="score">Xal: 0</p>
+        <p id="income">Saatlıq Gəlir: 0</p>
+        <button id="click-button"></button>
+        <br><br>
+        <button id="upgrade-button">+1 Xal Artırma </button>
+        <!-- <p id="level">Səviyyə: 0</p> -->
+        <button id="cards-button">Kartlara Bax</button>
+        <div class="language-selector">
+            <button id="lang-az" class="active">AZ</button>
+            <button id="lang-en">EN</button>
+            <button id="lang-ru">RU</button>
+        </div>
+    </div>
+
+    <!-- Kartlar səhifəsi üçün modal -->
+    <div id="cards-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2>Kartlar</h2>
+            <div id="cards"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
