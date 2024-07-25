@@ -9,12 +9,17 @@
 <body>
     <div class="container">
         <h1 id="game-title">Ekzaton MinTap</h1>
+        <div class="progress-bar-container">
+            <p id="level-info">Səviyyə: 1 (0 / 50,000 Xal)</p>
+            <div class="progress-bar">
+                <div class="progress-bar-fill" id="progress-bar-fill"></div>
+            </div>
+        </div>
         <p id="score">Xal: 0</p>
         <p id="income">Saatlıq Gəlir: 0</p>
         <button id="click-button"></button>
         <br><br>
-        <button id="upgrade-button">+1 Xal Artırma </button>
-        <!-- <p id="level">Səviyyə: 0</p> -->
+        <button id="upgrade-button">+1 Xal Artırma</button>
         <button id="cards-button">Kartlara Bax</button>
         <div class="language-selector">
             <button id="lang-az" class="active">AZ</button>
@@ -23,7 +28,6 @@
         </div>
     </div>
 
-    <!-- Kartlar səhifəsi üçün modal -->
     <div id="cards-modal" class="modal">
         <div class="modal-content">
             <span id="close-modal" class="close">&times;</span>
