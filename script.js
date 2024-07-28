@@ -22,7 +22,7 @@ const incomeDisplay = document.getElementById('income');
 const gameTitle = document.getElementById('game-title');
 const cardsContainer = document.getElementById('cards');
 const cardsButton = document.getElementById('cards-button');
-const cardsModal = document.getElementById('cards-modal');
+const modal = document.getElementById('cards-modal');
 const closeModal = document.getElementById('close-modal');
 const progressBarFill = document.getElementById('progress-bar-fill');
 const levelInfo = document.getElementById('level-info');
@@ -214,12 +214,21 @@ upgradeButton.addEventListener('click', () => {
     }
 });
 
+// Modalı açmaq
 cardsButton.addEventListener('click', () => {
-    cardsModal.style.display = 'block';
+    modal.style.display = 'block';
 });
 
+// Modalı bağlamaq üçün düymə
 closeModal.addEventListener('click', () => {
-    cardsModal.style.display = 'none';
+    modal.style.display = 'none';
+});
+
+// Modalın arxa fonuna klik edildikdə bağlanmaq
+window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
 });
 
 function animateButton(event) {
